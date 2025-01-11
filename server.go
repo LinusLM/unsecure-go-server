@@ -31,7 +31,7 @@ func main() {
 
 	fmt.Println("Hackable server is running on :8080...")
 	log.Println("Server started on :8080")
-	err := http.ListenAndServe(":8080", nil) //change this to your local IP in this format: 000.000.0.000:8080
+	err := http.ListenAndServe("000.000.0.000:8080", nil) //change this to your local IP in this format: change 000.000.0.000 to your local IP
 	if err != nil {
 		log.Printf("Error starting server: %v", err)
 		os.Exit(1)
